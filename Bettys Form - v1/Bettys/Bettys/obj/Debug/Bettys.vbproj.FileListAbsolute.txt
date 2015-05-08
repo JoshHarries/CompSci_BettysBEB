@@ -8,3 +8,7 @@
 \\wks-ef-file-01\efspupilsdata$\2005\05ef074\visual studio 2013\Projects\Bettys\Bettys\obj\Debug\Bettys.exe
 \\wks-ef-file-01\efspupilsdata$\2005\05ef074\visual studio 2013\Projects\Bettys\Bettys\obj\Debug\Bettys.xml
 \\wks-ef-file-01\efspupilsdata$\2005\05ef074\visual studio 2013\Projects\Bettys\Bettys\obj\Debug\Bettys.pdb
+B:\Windows\Documents\GitHub\CompSci_BettysBEB\Bettys Form - v1\Bettys\Bettys\bin\Debug\Bettys.exe.config
+B:\Windows\Documents\GitHub\CompSci_BettysBEB\Bettys Form - v1\Bettys\Bettys\obj\Debug\Bettys.exe
+B:\Windows\Documents\GitHub\CompSci_BettysBEB\Bettys Form - v1\Bettys\Bettys\obj\Debug\Bettys.xml
+B:\Windows\Documents\GitHub\CompSci_BettysBEB\Bettys Form - v1\Bettys\Bettys\obj\Debug\Bettys.pdb

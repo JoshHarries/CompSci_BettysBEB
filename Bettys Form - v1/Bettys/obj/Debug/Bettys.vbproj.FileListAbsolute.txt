@@ -28,3 +28,13 @@ B:\Windows\Documents\GitHub\CompSci_BettysBEB\Dylans Code - Bettys Form\Bettys\b
 B:\Windows\Documents\GitHub\CompSci_BettysBEB\Dylans Code - Bettys Form\Bettys\obj\Debug\Bettys.Form1.resources
 B:\Windows\Documents\GitHub\CompSci_BettysBEB\Dylans Code - Bettys Form\Bettys\obj\Debug\Bettys.Resources.resources
 B:\Windows\Documents\GitHub\CompSci_BettysBEB\Dylans Code - Bettys Form\Bettys\obj\Debug\Bettys.vbproj.GenerateResource.Cache
+B:\Windows\Documents\GitHub\CompSci_BettysBEB\Bettys Form - v1\Bettys\bin\Debug\Bettys.exe.config
+B:\Windows\Documents\GitHub\CompSci_BettysBEB\Bettys Form - v1\Bettys\obj\Debug\Bettys.exe
+B:\Windows\Documents\GitHub\CompSci_BettysBEB\Bettys Form - v1\Bettys\obj\Debug\Bettys.xml
+B:\Windows\Documents\GitHub\CompSci_BettysBEB\Bettys Form - v1\Bettys\obj\Debug\Bettys.pdb
+B:\Windows\Documents\GitHub\CompSci_BettysBEB\Bettys Form - v1\Bettys\bin\Debug\Bettys.exe
+B:\Windows\Documents\GitHub\CompSci_BettysBEB\Bettys Form - v1\Bettys\bin\Debug\Bettys.pdb
+B:\Windows\Documents\GitHub\CompSci_BettysBEB\Bettys Form - v1\Bettys\bin\Debug\Bettys.xml
+B:\Windows\Documents\GitHub\CompSci_BettysBEB\Bettys Form - v1\Bettys\obj\Debug\Bettys.Form1.resources
+B:\Windows\Documents\GitHub\CompSci_BettysBEB\Bettys Form - v1\Bettys\obj\Debug\Bettys.Resources.resources
+B:\Windows\Documents\GitHub\CompSci_BettysBEB\Bettys Form - v1\Bettys\obj\Debug\Bettys.vbproj.GenerateResource.Cache
