@@ -22,9 +22,11 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim ToolTip1 As System.Windows.Forms.ToolTip
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.drizzleCakeAmmount = New System.Windows.Forms.NumericUpDown()
-        Me.cupCakeAmmount = New System.Windows.Forms.NumericUpDown()
+        Me.drizzleCakeAmount = New System.Windows.Forms.NumericUpDown()
+        Me.cupCakeAmount = New System.Windows.Forms.NumericUpDown()
         Me.smallPlainFlourBox = New System.Windows.Forms.Label()
         Me.smallSugarBox = New System.Windows.Forms.Label()
         Me.smallButterBox = New System.Windows.Forms.Label()
@@ -36,31 +38,34 @@ Partial Class Form1
         Me.largeButterBox = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.plainFlourAmmount = New System.Windows.Forms.Label()
-        Me.sugarAmmount = New System.Windows.Forms.Label()
-        Me.butterAmmount = New System.Windows.Forms.Label()
+        Me.plainFlourAmount = New System.Windows.Forms.Label()
+        Me.sugarAmount = New System.Windows.Forms.Label()
+        Me.butterAmount = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        CType(Me.drizzleCakeAmmount, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.cupCakeAmmount, System.ComponentModel.ISupportInitialize).BeginInit()
+        ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        CType(Me.drizzleCakeAmount, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cupCakeAmount, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'drizzleCakeAmmount
+        'drizzleCakeAmount
         '
-        Me.drizzleCakeAmmount.Location = New System.Drawing.Point(228, 252)
-        Me.drizzleCakeAmmount.Name = "drizzleCakeAmmount"
-        Me.drizzleCakeAmmount.Size = New System.Drawing.Size(120, 20)
-        Me.drizzleCakeAmmount.TabIndex = 0
+        Me.drizzleCakeAmount.Location = New System.Drawing.Point(228, 252)
+        Me.drizzleCakeAmount.Name = "drizzleCakeAmount"
+        Me.drizzleCakeAmount.Size = New System.Drawing.Size(120, 20)
+        Me.drizzleCakeAmount.TabIndex = 0
+        ToolTip1.SetToolTip(Me.drizzleCakeAmount, "Please Enter Or Select The Amount Of Cakes You Would Like")
         '
-        'cupCakeAmmount
+        'cupCakeAmount
         '
-        Me.cupCakeAmmount.Location = New System.Drawing.Point(228, 214)
-        Me.cupCakeAmmount.Name = "cupCakeAmmount"
-        Me.cupCakeAmmount.Size = New System.Drawing.Size(120, 20)
-        Me.cupCakeAmmount.TabIndex = 1
+        Me.cupCakeAmount.Location = New System.Drawing.Point(228, 214)
+        Me.cupCakeAmount.Name = "cupCakeAmount"
+        Me.cupCakeAmount.Size = New System.Drawing.Size(120, 20)
+        Me.cupCakeAmount.TabIndex = 1
+        ToolTip1.SetToolTip(Me.cupCakeAmount, "Please Enter Or Select The Amount Of CupCakes You Would Like")
         '
         'smallPlainFlourBox
         '
@@ -145,49 +150,51 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 225)
+        Me.Button1.Location = New System.Drawing.Point(376, 225)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(73, 36)
         Me.Button1.TabIndex = 11
         Me.Button1.Text = "Enter"
+        ToolTip1.SetToolTip(Me.Button1, "Press (Or key [ENTER]) To Activate The Program")
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
         Me.Button2.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.Button2.Location = New System.Drawing.Point(373, 225)
+        Me.Button2.Location = New System.Drawing.Point(12, 225)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(73, 36)
         Me.Button2.TabIndex = 12
         Me.Button2.Text = "Reset"
+        ToolTip1.SetToolTip(Me.Button2, "Press (Or Key [ESC]) To Reset The Program")
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'plainFlourAmmount
+        'plainFlourAmount
         '
-        Me.plainFlourAmmount.AutoSize = True
-        Me.plainFlourAmmount.Location = New System.Drawing.Point(208, 336)
-        Me.plainFlourAmmount.Name = "plainFlourAmmount"
-        Me.plainFlourAmmount.Size = New System.Drawing.Size(13, 13)
-        Me.plainFlourAmmount.TabIndex = 13
-        Me.plainFlourAmmount.Text = "0"
+        Me.plainFlourAmount.AutoSize = True
+        Me.plainFlourAmount.Location = New System.Drawing.Point(208, 336)
+        Me.plainFlourAmount.Name = "plainFlourAmount"
+        Me.plainFlourAmount.Size = New System.Drawing.Size(13, 13)
+        Me.plainFlourAmount.TabIndex = 13
+        Me.plainFlourAmount.Text = "0"
         '
-        'sugarAmmount
+        'sugarAmount
         '
-        Me.sugarAmmount.AutoSize = True
-        Me.sugarAmmount.Location = New System.Drawing.Point(208, 431)
-        Me.sugarAmmount.Name = "sugarAmmount"
-        Me.sugarAmmount.Size = New System.Drawing.Size(13, 13)
-        Me.sugarAmmount.TabIndex = 14
-        Me.sugarAmmount.Text = "0"
+        Me.sugarAmount.AutoSize = True
+        Me.sugarAmount.Location = New System.Drawing.Point(208, 431)
+        Me.sugarAmount.Name = "sugarAmount"
+        Me.sugarAmount.Size = New System.Drawing.Size(13, 13)
+        Me.sugarAmount.TabIndex = 14
+        Me.sugarAmount.Text = "0"
         '
-        'butterAmmount
+        'butterAmount
         '
-        Me.butterAmmount.AutoSize = True
-        Me.butterAmmount.Location = New System.Drawing.Point(208, 398)
-        Me.butterAmmount.Name = "butterAmmount"
-        Me.butterAmmount.Size = New System.Drawing.Size(13, 13)
-        Me.butterAmmount.TabIndex = 15
-        Me.butterAmmount.Text = "0"
+        Me.butterAmount.AutoSize = True
+        Me.butterAmount.Location = New System.Drawing.Point(208, 398)
+        Me.butterAmount.Name = "butterAmount"
+        Me.butterAmount.Size = New System.Drawing.Size(13, 13)
+        Me.butterAmount.TabIndex = 15
+        Me.butterAmount.Text = "0"
         '
         'Label4
         '
@@ -226,6 +233,10 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 22
         Me.PictureBox1.TabStop = False
         '
+        'ToolTip1
+        '
+        ToolTip1.IsBalloon = True
+        '
         'Form1
         '
         Me.AcceptButton = Me.Button1
@@ -240,9 +251,9 @@ Partial Class Form1
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.butterAmmount)
-        Me.Controls.Add(Me.sugarAmmount)
-        Me.Controls.Add(Me.plainFlourAmmount)
+        Me.Controls.Add(Me.butterAmount)
+        Me.Controls.Add(Me.sugarAmount)
+        Me.Controls.Add(Me.plainFlourAmount)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.largeButterBox)
@@ -254,10 +265,11 @@ Partial Class Form1
         Me.Controls.Add(Me.smallButterBox)
         Me.Controls.Add(Me.smallSugarBox)
         Me.Controls.Add(Me.smallPlainFlourBox)
-        Me.Controls.Add(Me.cupCakeAmmount)
-        Me.Controls.Add(Me.drizzleCakeAmmount)
+        Me.Controls.Add(Me.cupCakeAmount)
+        Me.Controls.Add(Me.drizzleCakeAmount)
         Me.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DoubleBuffered = True
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.HelpButton = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
@@ -268,15 +280,15 @@ Partial Class Form1
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Bettys Best Ever Bakery - v1 Test"
         Me.TopMost = True
-        CType(Me.drizzleCakeAmmount, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.cupCakeAmmount, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.drizzleCakeAmount, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cupCakeAmount, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents drizzleCakeAmmount As System.Windows.Forms.NumericUpDown
-    Friend WithEvents cupCakeAmmount As System.Windows.Forms.NumericUpDown
+    Friend WithEvents drizzleCakeAmount As System.Windows.Forms.NumericUpDown
+    Friend WithEvents cupCakeAmount As System.Windows.Forms.NumericUpDown
     Friend WithEvents smallPlainFlourBox As System.Windows.Forms.Label
     Friend WithEvents smallSugarBox As System.Windows.Forms.Label
     Friend WithEvents smallButterBox As System.Windows.Forms.Label
@@ -288,9 +300,9 @@ Partial Class Form1
     Friend WithEvents largeButterBox As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents plainFlourAmmount As System.Windows.Forms.Label
-    Friend WithEvents sugarAmmount As System.Windows.Forms.Label
-    Friend WithEvents butterAmmount As System.Windows.Forms.Label
+    Friend WithEvents plainFlourAmount As System.Windows.Forms.Label
+    Friend WithEvents sugarAmount As System.Windows.Forms.Label
+    Friend WithEvents butterAmount As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label

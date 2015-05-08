@@ -1,37 +1,22 @@
 ﻿Public Class Form1
 
-    Dim drizzleCakeFlour, cupCakeFlour, cupCakeSugar, drizzleCakeSugar, cupCakeButter, drizzleCakeButter, totalButter, totalSugar, totalFlour, smallFlourPack, mediumFlourPack, largeFlourPack As Integer
-    Dim smallSugarPack, mediumSugarPack, largeSugarPack, smallButterPack, mediumButterPack, largeButterPack As Integer
+    Dim totalButter, totalSugar, totalFlour, smallFlourPack, mediumFlourPack, largeFlourPack, smallSugarPack, mediumSugarPack, largeSugarPack, smallButterPack, mediumButterPack, largeButterPack As Integer
 
-    Sub ammountOfFlour()
+    '(c) Josh Harries 2015 - GitHub: https://github.com/JoshHarries/CompSci_BettysBestEverBakery - WJEC Computer Science 2016 Entry
 
-        drizzleCakeFlour = drizzleCakeAmmount.Value * 240
-        cupCakeFlour = cupCakeAmmount.Value * 12
-        totalFlour = cupCakeFlour + drizzleCakeFlour
+    Sub ingredQtys()
 
-    End Sub
-
-    Sub ammountOfSugar()
-
-        drizzleCakeSugar = drizzleCakeAmmount.Value * 300
-        cupCakeSugar = cupCakeAmmount.Value * 14
-        totalSugar = cupCakeSugar + drizzleCakeSugar
+        totalFlour = drizzleCakeAmount.Value * 240 + cupCakeAmount.Value * 12
+        totalSugar = drizzleCakeAmount.Value * 300 + cupCakeAmount.Value * 14
+        totalButter = drizzleCakeAmount.Value * 240 + cupCakeAmount.Value * 4
 
     End Sub
 
-    Sub ammountOfButter()
+    Sub displayIngredients()
 
-        drizzleCakeButter = drizzleCakeAmmount.Value * 240
-        cupCakeButter = cupCakeAmmount.Value * 4
-        totalButter = cupCakeButter + drizzleCakeButter
-
-    End Sub
-
-    Sub displayCustomerAmmount()
-
-        plainFlourAmmount.Text = totalFlour
-        sugarAmmount.Text = totalSugar
-        butterAmmount.Text = totalButter
+        plainFlourAmount.Text = totalFlour
+        sugarAmount.Text = totalSugar
+        butterAmount.Text = totalButter
 
     End Sub
 
@@ -54,7 +39,6 @@
         While smallFlourPack > 1
             smallFlourPack -= 2
             mediumFlourPack += 1
-
         End While
 
     End Sub
@@ -71,15 +55,12 @@
         While smallSugarPack > 2
             smallSugarPack -= 3
             largeSugarPack += 1
-
         End While
 
         While smallSugarPack > 1
             smallSugarPack -= 2
             mediumSugarPack += 1
         End While
-
-
 
     End Sub
 
@@ -102,12 +83,11 @@
         While smallButterPack > 1
             smallButterPack -= 2
             mediumButterPack += 1
-
         End While
 
     End Sub
 
-    Sub displayTotal()
+    Sub displayPackaging()
 
         smallPlainFlourBox.Text = smallFlourPack
         mediumFlourBox.Text = mediumFlourPack
@@ -123,20 +103,18 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
-        ammountOfButter()
-        ammountOfFlour()
-        ammountOfSugar()
-        displayCustomerAmmount()
+        ingredQtys()
+        displayIngredients()
         calculateButter()
         calculateFlour()
         calculateSugar()
-        displayTotal()
+        displayPackaging()
 
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        drizzleCakeAmmount.Value = 0
-        cupCakeAmmount.Value = 0
+        drizzleCakeAmount.Value = 0
+        cupCakeAmount.Value = 0
         Button1_Click(sender, New System.EventArgs())
     End Sub
 
