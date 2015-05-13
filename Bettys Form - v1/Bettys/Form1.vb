@@ -4,7 +4,7 @@
 
     '(c) Josh Harries 2015 - GitHub: https://github.com/JoshHarries/CompSci_BettysBestEverBakery - WJEC Computer Science 2016 Entry
 
-    Sub ingredQtys()
+    Sub ingredientsQtys()
 
         totalFlour = drizzleCakeAmount.Value * 240 + cupCakeAmount.Value * 12
         totalSugar = drizzleCakeAmount.Value * 300 + cupCakeAmount.Value * 14
@@ -14,9 +14,9 @@
 
     Sub displayIngredients()
 
-        plainFlourAmount.Text = totalFlour
-        sugarAmount.Text = totalSugar
-        butterAmount.Text = totalButter
+        plainFlourAmount.Text = totalFlour & "g"
+        sugarAmount.Text = totalSugar & "g"
+        butterAmount.Text = totalButter & "g"
 
     End Sub
 
@@ -44,6 +44,7 @@
     End Sub
 
     Sub calculateSugar()
+
         smallSugarPack = 0
         mediumSugarPack = 0
         largeSugarPack = 0
@@ -65,6 +66,7 @@
     End Sub
 
     Sub calculateButter()
+
         smallButterPack = 0
         mediumButterPack = 0
         largeButterPack = 0
@@ -103,7 +105,7 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
-        ingredQtys()
+        ingredientsQtys()
         displayIngredients()
         calculateButter()
         calculateFlour()
@@ -113,6 +115,7 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
         drizzleCakeAmount.Value = 0
         cupCakeAmount.Value = 0
         Button1_Click(sender, New System.EventArgs())

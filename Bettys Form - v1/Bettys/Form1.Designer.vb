@@ -27,6 +27,8 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.drizzleCakeAmount = New System.Windows.Forms.NumericUpDown()
         Me.cupCakeAmount = New System.Windows.Forms.NumericUpDown()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.smallPlainFlourBox = New System.Windows.Forms.Label()
         Me.smallSugarBox = New System.Windows.Forms.Label()
         Me.smallButterBox = New System.Windows.Forms.Label()
@@ -36,8 +38,6 @@ Partial Class Form1
         Me.largeSugarBox = New System.Windows.Forms.Label()
         Me.largeFlourBox = New System.Windows.Forms.Label()
         Me.largeButterBox = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.plainFlourAmount = New System.Windows.Forms.Label()
         Me.sugarAmount = New System.Windows.Forms.Label()
         Me.butterAmount = New System.Windows.Forms.Label()
@@ -51,175 +51,230 @@ Partial Class Form1
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
+        'ToolTip1
+        '
+        ToolTip1.IsBalloon = True
+        '
         'drizzleCakeAmount
         '
+        Me.drizzleCakeAmount.Cursor = System.Windows.Forms.Cursors.Cross
+        Me.drizzleCakeAmount.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.drizzleCakeAmount.ForeColor = System.Drawing.Color.Fuchsia
         Me.drizzleCakeAmount.Location = New System.Drawing.Point(228, 252)
         Me.drizzleCakeAmount.Name = "drizzleCakeAmount"
-        Me.drizzleCakeAmount.Size = New System.Drawing.Size(120, 20)
+        Me.drizzleCakeAmount.Size = New System.Drawing.Size(120, 22)
         Me.drizzleCakeAmount.TabIndex = 0
         ToolTip1.SetToolTip(Me.drizzleCakeAmount, "Please Enter Or Select The Amount Of Cakes You Would Like")
         '
         'cupCakeAmount
         '
+        Me.cupCakeAmount.Cursor = System.Windows.Forms.Cursors.Cross
+        Me.cupCakeAmount.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cupCakeAmount.ForeColor = System.Drawing.Color.Fuchsia
         Me.cupCakeAmount.Location = New System.Drawing.Point(228, 214)
         Me.cupCakeAmount.Name = "cupCakeAmount"
-        Me.cupCakeAmount.Size = New System.Drawing.Size(120, 20)
+        Me.cupCakeAmount.Size = New System.Drawing.Size(120, 22)
         Me.cupCakeAmount.TabIndex = 1
         ToolTip1.SetToolTip(Me.cupCakeAmount, "Please Enter Or Select The Amount Of CupCakes You Would Like")
         '
-        'smallPlainFlourBox
-        '
-        Me.smallPlainFlourBox.AutoSize = True
-        Me.smallPlainFlourBox.Location = New System.Drawing.Point(156, 511)
-        Me.smallPlainFlourBox.Name = "smallPlainFlourBox"
-        Me.smallPlainFlourBox.Size = New System.Drawing.Size(13, 13)
-        Me.smallPlainFlourBox.TabIndex = 2
-        Me.smallPlainFlourBox.Text = "0"
-        '
-        'smallSugarBox
-        '
-        Me.smallSugarBox.AutoSize = True
-        Me.smallSugarBox.Location = New System.Drawing.Point(156, 605)
-        Me.smallSugarBox.Name = "smallSugarBox"
-        Me.smallSugarBox.Size = New System.Drawing.Size(13, 13)
-        Me.smallSugarBox.TabIndex = 3
-        Me.smallSugarBox.Text = "0"
-        '
-        'smallButterBox
-        '
-        Me.smallButterBox.AutoSize = True
-        Me.smallButterBox.Location = New System.Drawing.Point(156, 570)
-        Me.smallButterBox.Name = "smallButterBox"
-        Me.smallButterBox.Size = New System.Drawing.Size(13, 13)
-        Me.smallButterBox.TabIndex = 4
-        Me.smallButterBox.Text = "0"
-        '
-        'mediumFlourBox
-        '
-        Me.mediumFlourBox.AutoSize = True
-        Me.mediumFlourBox.Location = New System.Drawing.Point(238, 511)
-        Me.mediumFlourBox.Name = "mediumFlourBox"
-        Me.mediumFlourBox.Size = New System.Drawing.Size(13, 13)
-        Me.mediumFlourBox.TabIndex = 5
-        Me.mediumFlourBox.Text = "0"
-        '
-        'mediumButterBox
-        '
-        Me.mediumButterBox.AutoSize = True
-        Me.mediumButterBox.Location = New System.Drawing.Point(238, 570)
-        Me.mediumButterBox.Name = "mediumButterBox"
-        Me.mediumButterBox.Size = New System.Drawing.Size(13, 13)
-        Me.mediumButterBox.TabIndex = 6
-        Me.mediumButterBox.Text = "0"
-        '
-        'mediumSugarBox
-        '
-        Me.mediumSugarBox.AutoSize = True
-        Me.mediumSugarBox.Location = New System.Drawing.Point(238, 605)
-        Me.mediumSugarBox.Name = "mediumSugarBox"
-        Me.mediumSugarBox.Size = New System.Drawing.Size(13, 13)
-        Me.mediumSugarBox.TabIndex = 7
-        Me.mediumSugarBox.Text = "0"
-        '
-        'largeSugarBox
-        '
-        Me.largeSugarBox.AutoSize = True
-        Me.largeSugarBox.Location = New System.Drawing.Point(321, 605)
-        Me.largeSugarBox.Name = "largeSugarBox"
-        Me.largeSugarBox.Size = New System.Drawing.Size(13, 13)
-        Me.largeSugarBox.TabIndex = 8
-        Me.largeSugarBox.Text = "0"
-        '
-        'largeFlourBox
-        '
-        Me.largeFlourBox.AutoSize = True
-        Me.largeFlourBox.Location = New System.Drawing.Point(321, 511)
-        Me.largeFlourBox.Name = "largeFlourBox"
-        Me.largeFlourBox.Size = New System.Drawing.Size(13, 13)
-        Me.largeFlourBox.TabIndex = 9
-        Me.largeFlourBox.Text = "0"
-        '
-        'largeButterBox
-        '
-        Me.largeButterBox.AutoSize = True
-        Me.largeButterBox.Location = New System.Drawing.Point(321, 570)
-        Me.largeButterBox.Name = "largeButterBox"
-        Me.largeButterBox.Size = New System.Drawing.Size(13, 13)
-        Me.largeButterBox.TabIndex = 10
-        Me.largeButterBox.Text = "0"
-        '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.AppStarting
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Button1.Location = New System.Drawing.Point(376, 225)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(73, 36)
         Me.Button1.TabIndex = 11
         Me.Button1.Text = "Enter"
         ToolTip1.SetToolTip(Me.Button1, "Press (Or key [ENTER]) To Activate The Program")
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button2.Cursor = System.Windows.Forms.Cursors.AppStarting
         Me.Button2.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Button2.Location = New System.Drawing.Point(12, 225)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(73, 36)
         Me.Button2.TabIndex = 12
         Me.Button2.Text = "Reset"
         ToolTip1.SetToolTip(Me.Button2, "Press (Or Key [ESC]) To Reset The Program")
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'smallPlainFlourBox
+        '
+        Me.smallPlainFlourBox.AutoSize = True
+        Me.smallPlainFlourBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.smallPlainFlourBox.ForeColor = System.Drawing.Color.Fuchsia
+        Me.smallPlainFlourBox.Location = New System.Drawing.Point(156, 509)
+        Me.smallPlainFlourBox.Name = "smallPlainFlourBox"
+        Me.smallPlainFlourBox.Size = New System.Drawing.Size(17, 17)
+        Me.smallPlainFlourBox.TabIndex = 2
+        Me.smallPlainFlourBox.Text = "0"
+        '
+        'smallSugarBox
+        '
+        Me.smallSugarBox.AutoSize = True
+        Me.smallSugarBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.smallSugarBox.ForeColor = System.Drawing.Color.Fuchsia
+        Me.smallSugarBox.Location = New System.Drawing.Point(156, 603)
+        Me.smallSugarBox.Name = "smallSugarBox"
+        Me.smallSugarBox.Size = New System.Drawing.Size(17, 17)
+        Me.smallSugarBox.TabIndex = 3
+        Me.smallSugarBox.Text = "0"
+        '
+        'smallButterBox
+        '
+        Me.smallButterBox.AutoSize = True
+        Me.smallButterBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.smallButterBox.ForeColor = System.Drawing.Color.Fuchsia
+        Me.smallButterBox.Location = New System.Drawing.Point(156, 568)
+        Me.smallButterBox.Name = "smallButterBox"
+        Me.smallButterBox.Size = New System.Drawing.Size(17, 17)
+        Me.smallButterBox.TabIndex = 4
+        Me.smallButterBox.Text = "0"
+        '
+        'mediumFlourBox
+        '
+        Me.mediumFlourBox.AutoSize = True
+        Me.mediumFlourBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mediumFlourBox.ForeColor = System.Drawing.Color.Fuchsia
+        Me.mediumFlourBox.Location = New System.Drawing.Point(238, 509)
+        Me.mediumFlourBox.Name = "mediumFlourBox"
+        Me.mediumFlourBox.Size = New System.Drawing.Size(17, 17)
+        Me.mediumFlourBox.TabIndex = 5
+        Me.mediumFlourBox.Text = "0"
+        '
+        'mediumButterBox
+        '
+        Me.mediumButterBox.AutoSize = True
+        Me.mediumButterBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mediumButterBox.ForeColor = System.Drawing.Color.Fuchsia
+        Me.mediumButterBox.Location = New System.Drawing.Point(238, 568)
+        Me.mediumButterBox.Name = "mediumButterBox"
+        Me.mediumButterBox.Size = New System.Drawing.Size(17, 17)
+        Me.mediumButterBox.TabIndex = 6
+        Me.mediumButterBox.Text = "0"
+        '
+        'mediumSugarBox
+        '
+        Me.mediumSugarBox.AutoSize = True
+        Me.mediumSugarBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mediumSugarBox.ForeColor = System.Drawing.Color.Fuchsia
+        Me.mediumSugarBox.Location = New System.Drawing.Point(238, 603)
+        Me.mediumSugarBox.Name = "mediumSugarBox"
+        Me.mediumSugarBox.Size = New System.Drawing.Size(17, 17)
+        Me.mediumSugarBox.TabIndex = 7
+        Me.mediumSugarBox.Text = "0"
+        '
+        'largeSugarBox
+        '
+        Me.largeSugarBox.AutoSize = True
+        Me.largeSugarBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.largeSugarBox.ForeColor = System.Drawing.Color.Fuchsia
+        Me.largeSugarBox.Location = New System.Drawing.Point(321, 603)
+        Me.largeSugarBox.Name = "largeSugarBox"
+        Me.largeSugarBox.Size = New System.Drawing.Size(17, 17)
+        Me.largeSugarBox.TabIndex = 8
+        Me.largeSugarBox.Text = "0"
+        '
+        'largeFlourBox
+        '
+        Me.largeFlourBox.AutoSize = True
+        Me.largeFlourBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.largeFlourBox.ForeColor = System.Drawing.Color.Fuchsia
+        Me.largeFlourBox.Location = New System.Drawing.Point(321, 509)
+        Me.largeFlourBox.Name = "largeFlourBox"
+        Me.largeFlourBox.Size = New System.Drawing.Size(17, 17)
+        Me.largeFlourBox.TabIndex = 9
+        Me.largeFlourBox.Text = "0"
+        '
+        'largeButterBox
+        '
+        Me.largeButterBox.AutoSize = True
+        Me.largeButterBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.largeButterBox.ForeColor = System.Drawing.Color.Fuchsia
+        Me.largeButterBox.Location = New System.Drawing.Point(321, 568)
+        Me.largeButterBox.Name = "largeButterBox"
+        Me.largeButterBox.Size = New System.Drawing.Size(17, 17)
+        Me.largeButterBox.TabIndex = 10
+        Me.largeButterBox.Text = "0"
         '
         'plainFlourAmount
         '
         Me.plainFlourAmount.AutoSize = True
-        Me.plainFlourAmount.Location = New System.Drawing.Point(208, 336)
+        Me.plainFlourAmount.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.plainFlourAmount.ForeColor = System.Drawing.Color.Fuchsia
+        Me.plainFlourAmount.Location = New System.Drawing.Point(208, 332)
         Me.plainFlourAmount.Name = "plainFlourAmount"
-        Me.plainFlourAmount.Size = New System.Drawing.Size(13, 13)
+        Me.plainFlourAmount.Size = New System.Drawing.Size(17, 17)
         Me.plainFlourAmount.TabIndex = 13
         Me.plainFlourAmount.Text = "0"
         '
         'sugarAmount
         '
         Me.sugarAmount.AutoSize = True
-        Me.sugarAmount.Location = New System.Drawing.Point(208, 431)
+        Me.sugarAmount.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.sugarAmount.ForeColor = System.Drawing.Color.Fuchsia
+        Me.sugarAmount.Location = New System.Drawing.Point(208, 428)
         Me.sugarAmount.Name = "sugarAmount"
-        Me.sugarAmount.Size = New System.Drawing.Size(13, 13)
+        Me.sugarAmount.Size = New System.Drawing.Size(17, 17)
         Me.sugarAmount.TabIndex = 14
         Me.sugarAmount.Text = "0"
         '
         'butterAmount
         '
         Me.butterAmount.AutoSize = True
-        Me.butterAmount.Location = New System.Drawing.Point(208, 398)
+        Me.butterAmount.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butterAmount.ForeColor = System.Drawing.Color.Fuchsia
+        Me.butterAmount.Location = New System.Drawing.Point(208, 395)
         Me.butterAmount.Name = "butterAmount"
-        Me.butterAmount.Size = New System.Drawing.Size(13, 13)
+        Me.butterAmount.Size = New System.Drawing.Size(17, 17)
         Me.butterAmount.TabIndex = 15
         Me.butterAmount.Text = "0"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(225, 490)
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label4.Location = New System.Drawing.Point(217, 490)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(44, 13)
+        Me.Label4.Size = New System.Drawing.Size(63, 17)
         Me.Label4.TabIndex = 19
         Me.Label4.Text = "Medium"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(314, 490)
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label5.Location = New System.Drawing.Point(306, 490)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(34, 13)
+        Me.Label5.Size = New System.Drawing.Size(50, 17)
         Me.Label5.TabIndex = 20
         Me.Label5.Text = "Large"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(149, 490)
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label6.Location = New System.Drawing.Point(141, 490)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(32, 13)
+        Me.Label6.Size = New System.Drawing.Size(47, 17)
         Me.Label6.TabIndex = 21
         Me.Label6.Text = "Small"
         '
@@ -232,10 +287,6 @@ Partial Class Form1
         Me.PictureBox1.Size = New System.Drawing.Size(97, 36)
         Me.PictureBox1.TabIndex = 22
         Me.PictureBox1.TabStop = False
-        '
-        'ToolTip1
-        '
-        ToolTip1.IsBalloon = True
         '
         'Form1
         '
