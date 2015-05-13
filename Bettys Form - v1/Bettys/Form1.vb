@@ -1,105 +1,107 @@
 ﻿Public Class Form1
 
-    Dim totalButter, totalSugar, totalFlour, smallFlourPack, mediumFlourPack, largeFlourPack, smallSugarPack, mediumSugarPack, largeSugarPack, smallButterPack, mediumButterPack, largeButterPack As Integer
+    Dim totalEggs, totalButter, totalSugar, totalFlour, smallFlourQty, mediumFlourQty, largeFlourQty, smallSugarQty, mediumSugarQty, largeSugarQty, smallButterQty, mediumButterQty, largeButterQty As Integer
 
     '(c) Josh Harries 2015 - GitHub: https://github.com/JoshHarries/CompSci_BettysBestEverBakery - WJEC Computer Science 2016 Entry
 
     Sub ingredientsQtys()
 
-        totalFlour = drizzleCakeAmount.Value * 240 + cupCakeAmount.Value * 12
-        totalSugar = drizzleCakeAmount.Value * 300 + cupCakeAmount.Value * 14
-        totalButter = drizzleCakeAmount.Value * 240 + cupCakeAmount.Value * 4
+        totalFlour = cakeQty.Value * 240 + cupcakeQty.Value * 12
+        totalSugar = cakeQty.Value * 300 + cupcakeQty.Value * 14
+        totalButter = cakeQty.Value * 240 + cupcakeQty.Value * 4
+        totalEggs = Math.Ceiling(cakeQty.Value * 4.5 + cupcakeQty.Value * 0.1)
 
     End Sub
 
     Sub displayIngredients()
 
-        plainFlourAmount.Text = totalFlour & "g"
-        sugarAmount.Text = totalSugar & "g"
-        butterAmount.Text = totalButter & "g"
+        flourQty.Text = totalFlour & "g"
+        sugarQty.Text = totalSugar & "g"
+        butterQty.Text = totalButter & "g"
+        eggQty.Text = totalEggs & " Eggs."
 
     End Sub
 
     Sub calculateFlour()
 
-        smallFlourPack = 0
-        mediumFlourPack = 0
-        largeFlourPack = 0
-        smallFlourPack = Math.Floor(totalFlour / 250)
+        smallFlourQty = 0
+        mediumFlourQty = 0
+        largeFlourQty = 0
+        smallFlourQty = Math.Floor(totalFlour / 250)
 
         If totalFlour Mod 250 <> 0 Then
-            smallFlourPack += 1
+            smallFlourQty += 1
         End If
 
-        While smallFlourPack > 2
-            smallFlourPack -= 3
-            largeFlourPack += 1
+        While smallFlourQty > 2
+            smallFlourQty -= 3
+            largeFlourQty += 1
         End While
 
-        While smallFlourPack > 1
-            smallFlourPack -= 2
-            mediumFlourPack += 1
+        While smallFlourQty > 1
+            smallFlourQty -= 2
+            mediumFlourQty += 1
         End While
 
     End Sub
 
     Sub calculateSugar()
 
-        smallSugarPack = 0
-        mediumSugarPack = 0
-        largeSugarPack = 0
-        smallSugarPack = Math.Floor(totalSugar / 200)
+        smallSugarQty = 0
+        mediumSugarQty = 0
+        largeSugarQty = 0
+        smallSugarQty = Math.Floor(totalSugar / 200)
         If totalSugar Mod 200 <> 0 Then
-            smallSugarPack += 1
+            smallSugarQty += 1
         End If
 
-        While smallSugarPack > 2
-            smallSugarPack -= 3
-            largeSugarPack += 1
+        While smallSugarQty > 2
+            smallSugarQty -= 3
+            largeSugarQty += 1
         End While
 
-        While smallSugarPack > 1
-            smallSugarPack -= 2
-            mediumSugarPack += 1
+        While smallSugarQty > 1
+            smallSugarQty -= 2
+            mediumSugarQty += 1
         End While
 
     End Sub
 
     Sub calculateButter()
 
-        smallButterPack = 0
-        mediumButterPack = 0
-        largeButterPack = 0
+        smallButterQty = 0
+        mediumButterQty = 0
+        largeButterQty = 0
 
-        smallButterPack = Math.Floor(totalButter / 125)
+        smallButterQty = Math.Floor(totalButter / 125)
 
         If totalButter Mod 125 <> 0 Then
-            smallButterPack += 1
+            smallButterQty += 1
         End If
 
-        While smallButterPack > 3
-            smallButterPack -= 4
-            largeButterPack += 1
+        While smallButterQty > 3
+            smallButterQty -= 4
+            largeButterQty += 1
         End While
 
-        While smallButterPack > 1
-            smallButterPack -= 2
-            mediumButterPack += 1
+        While smallButterQty > 1
+            smallButterQty -= 2
+            mediumButterQty += 1
         End While
 
     End Sub
 
-    Sub displayPackaging()
+    Sub displayQtyaging()
 
-        smallPlainFlourBox.Text = smallFlourPack
-        mediumFlourBox.Text = mediumFlourPack
-        largeFlourBox.Text = largeFlourPack
-        smallSugarBox.Text = smallSugarPack
-        mediumSugarBox.Text = mediumSugarPack
-        largeSugarBox.Text = largeSugarPack
-        smallButterBox.Text = smallButterPack
-        mediumButterBox.Text = mediumButterPack
-        largeButterBox.Text = largeButterPack
+        smallFlour.Text = smallFlourQty
+        mediumFlour.Text = mediumFlourQty
+        largeFlour.Text = largeFlourQty
+        smallSugar.Text = smallSugarQty
+        mediumSugar.Text = mediumSugarQty
+        largeSugar.Text = largeSugarQty
+        smallButter.Text = smallButterQty
+        mediumButter.Text = mediumButterQty
+        largeButter.Text = largeButterQty
 
     End Sub
 
@@ -110,14 +112,14 @@
         calculateButter()
         calculateFlour()
         calculateSugar()
-        displayPackaging()
+        displayQtyaging()
 
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
-        drizzleCakeAmount.Value = 0
-        cupCakeAmount.Value = 0
+        cakeQty.Value = 0
+        cupcakeQty.Value = 0
         Button1_Click(sender, New System.EventArgs())
     End Sub
 
