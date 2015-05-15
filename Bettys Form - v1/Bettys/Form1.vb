@@ -1,12 +1,12 @@
 ﻿Public Class Form1
 
-    Dim totalEggs, totalButter, totalSugar, totalFlour, smallFlourQty, mediumFlourQty, largeFlourQty, smallSugarQty, mediumSugarQty, largeSugarQty, smallButterQty, mediumButterQty, largeButterQty As Integer
+    Dim totalEggs, totalButter, totalSugar, totalFlour, smallFlourQty, mediumFlourQty, largeFlourQty, smallSugarQty, mediumSugarQty, largeSugarQty, smallButterQty, mediumButterQty, largeButterQty, smallEggsQty, mediumEggsQty, largeEggsQty As Integer
 
-    '(c) Josh Harries 2015 - GitHub: https://github.com/JoshHarries/CompSci_BettysBestEverBakery - WJEC Computer Science 2016 Entry
+    '(c) Josh Harries 1015 - GitHub: https://github.com/JoshHarries/CompSci_BettysBestEverBakery - WJEC Computer Science 1016 Entry
 
     Sub ingredientsQtys()
 
-        totalFlour = cakeQty.Value * 240 + cupcakeQty.Value * 12
+        totalFlour = cakeQty.Value * 240 + cupcakeQty.Value * 6
         totalSugar = cakeQty.Value * 300 + cupcakeQty.Value * 14
         totalButter = cakeQty.Value * 240 + cupcakeQty.Value * 4
         totalEggs = Math.Ceiling(cakeQty.Value * 4.5 + cupcakeQty.Value * 0.1)
@@ -50,8 +50,8 @@
         smallSugarQty = 0
         mediumSugarQty = 0
         largeSugarQty = 0
-        smallSugarQty = Math.Floor(totalSugar / 200)
-        If totalSugar Mod 200 <> 0 Then
+        smallSugarQty = Math.Floor(totalSugar / 100)
+        If totalSugar Mod 100 <> 0 Then
             smallSugarQty += 1
         End If
 
@@ -73,9 +73,9 @@
         mediumButterQty = 0
         largeButterQty = 0
 
-        smallButterQty = Math.Floor(totalButter / 125)
+        smallButterQty = Math.Floor(totalButter / 65)
 
-        If totalButter Mod 125 <> 0 Then
+        If totalButter Mod 65 <> 0 Then
             smallButterQty += 1
         End If
 
@@ -91,17 +91,94 @@
 
     End Sub
 
-    Sub displayQtyaging()
+    Sub calculateEggs()
+
+        largeEggsQty = 0
+        smallEggsQty = 0
+        mediumEggsQty = 0
+
+        Dim six, ten As Integer
+
+        '******************************************************
+        '* Try fitting the number of matches into size 12     *
+        '* boxes and then size 10 boxes.                      *
+        '******************************************************
+
+        While totalEggs > 5
+            six = 6
+            ten = 10
+
+            While totalEggs > six
+                six += 6
+            End While
+
+            While totalEggs > ten
+                ten += 10
+            End While
+
+            '***************************************************
+            '* If size 12 is a better or the same fit as size  *
+            '* 20, then take 12 from the match total and add 1 *
+            '* onto the small match box total. Otherwise take  *
+            '* 20 from the match total and add 1 onto the      *
+            '* medium match box total.                         *
+            '***************************************************
+
+            six -= totalEggs
+            ten -= totalEggs
+
+            If six <= ten Then
+                smallEggsQty += 1
+                totalEggs -= 6
+            Else
+                mediumEggsQty += 1
+                totalEggs -= 10
+            End If
+
+        End While
+
+        '*****************************************************
+        '* Any matches left over after filling the 12 and 20 *
+        '* match boxes are put into a box. If there are 12   *
+        '* or less thay go into a small box, otherwise they  *
+        '* go into a medium box.                             *
+        '*****************************************************
+
+        If totalEggs > 0 And totalEggs < 7 Then
+            smallEggsQty += 1
+        ElseIf totalEggs > 6 Then
+            mediumEggsQty += 1
+        End If
+
+        '****************************************************
+        '* For every two small match boxes you have, change *
+        '* them into one large match box.                   *
+        '****************************************************
+
+        While smallEggsQty > 1
+            largeEggsQty += 1
+            smallEggsQty -= 2
+        End While
+
+    End Sub
+
+    Sub displayPackaging()
 
         smallFlour.Text = smallFlourQty
         mediumFlour.Text = mediumFlourQty
         largeFlour.Text = largeFlourQty
+
         smallSugar.Text = smallSugarQty
         mediumSugar.Text = mediumSugarQty
         largeSugar.Text = largeSugarQty
+
         smallButter.Text = smallButterQty
         mediumButter.Text = mediumButterQty
         largeButter.Text = largeButterQty
+
+        smallEggs.Text = smallEggsQty
+        mediumEggs.Text = mediumEggsQty
+        largeEggs.Text = largeEggsQty
 
     End Sub
 
@@ -112,7 +189,8 @@
         calculateButter()
         calculateFlour()
         calculateSugar()
-        displayQtyaging()
+        calculateEggs()
+        displayPackaging()
 
     End Sub
 

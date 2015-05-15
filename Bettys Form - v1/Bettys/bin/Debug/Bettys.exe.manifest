@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bettys.exe" size="1412096">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bettys.exe" size="1412608">
       <assemblyIdentity name="Bettys" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>sonNzQyhEPuAzMIvYPpw3ui34zQ5XUUfATzZHUHYUig=</dsig:DigestValue>
+        <dsig:DigestValue>Pbn294Aa94K6WfDKzfKvie1PRJJebSWc//vfcwuH3mg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
