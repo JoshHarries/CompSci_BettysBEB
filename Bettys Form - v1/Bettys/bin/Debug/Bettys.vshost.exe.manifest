@@ -43,24 +43,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bettys.exe" size="1397248">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bettys.exe" size="1412096">
       <assemblyIdentity name="Bettys" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>1qXDubxdEyNgBt0jYHNFHmOwaAatiOVUx93IpG2lD2w=</dsig:DigestValue>
+        <dsig:DigestValue>sonNzQyhEPuAzMIvYPpw3ui34zQ5XUUfATzZHUHYUig=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Bettys.exe.config" size="186">
+  <file name="Bettys.exe.config" size="181">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>h0UeIdteCM29dGVw07LmHp593fPbh0IN11GyN3f2uRA=</dsig:DigestValue>
+      <dsig:DigestValue>HcmCMwiql3br8Fmt6LCgG63bfyQCl0lkdoWbJD0n1BY=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\Archigraphs-Aka-Acid-Vanilla-Cupcake.ico" size="215897">
