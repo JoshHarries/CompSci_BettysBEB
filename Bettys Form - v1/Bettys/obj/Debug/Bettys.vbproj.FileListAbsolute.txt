@@ -60,3 +60,4 @@ C:\Users\05ef129\Source\Repos\CompSci_BettysBestEverBakery\Bettys Form - v1\Bett
 C:\Users\05ef129\Source\Repos\CompSci_BettysBestEverBakery\Bettys Form - v1\Bettys\obj\Debug\Bettys.TrustInfo.xml
 C:\Users\05ef129\Source\Repos\CompSci_BettysBestEverBakery\Bettys Form - v1\Bettys\obj\Debug\Bettys.exe.manifest
 C:\Users\05ef129\Source\Repos\CompSci_BettysBestEverBakery\Bettys Form - v1\Bettys\obj\Debug\Bettys.application
+C:\Users\05ef129\Source\Repos\CompSci_BettysBestEverBakery\Bettys Form - v1\Bettys\obj\Debug\Bettys.vbprojResolveAssemblyReference.cache

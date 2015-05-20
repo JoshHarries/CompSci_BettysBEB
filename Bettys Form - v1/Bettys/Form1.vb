@@ -6,7 +6,7 @@
 
     Sub ingredientsQtys()
 
-        totalFlour = cakeQty.Value * 240 + cupcakeQty.Value * 6
+        totalFlour = cakeQty.Value * 240 + cupcakeQty.Value * 12
         totalSugar = cakeQty.Value * 300 + cupcakeQty.Value * 14
         totalButter = cakeQty.Value * 240 + cupcakeQty.Value * 4
         totalEggs = Math.Ceiling(cakeQty.Value * 4.5 + cupcakeQty.Value * 0.1)
