@@ -65,3 +65,7 @@ B:\Windows\Documents\GitHub\CompSci_BettysBestEverBakery\Bettys Form - v1\Bettys
 B:\Windows\Documents\GitHub\CompSci_BettysBestEverBakery\Bettys Form - v1\Bettys\obj\Debug\Bettys.exe
 B:\Windows\Documents\GitHub\CompSci_BettysBestEverBakery\Bettys Form - v1\Bettys\obj\Debug\Bettys.xml
 B:\Windows\Documents\GitHub\CompSci_BettysBestEverBakery\Bettys Form - v1\Bettys\obj\Debug\Bettys.pdb
+C:\Users\05ef074\Source\Repos\CompSci_BettysBestEverBakery\Bettys Form - v1\Bettys\bin\Debug\Bettys.exe.config
+C:\Users\05ef074\Source\Repos\CompSci_BettysBestEverBakery\Bettys Form - v1\Bettys\obj\Debug\Bettys.exe
+C:\Users\05ef074\Source\Repos\CompSci_BettysBestEverBakery\Bettys Form - v1\Bettys\obj\Debug\Bettys.xml
+C:\Users\05ef074\Source\Repos\CompSci_BettysBestEverBakery\Bettys Form - v1\Bettys\obj\Debug\Bettys.pdb

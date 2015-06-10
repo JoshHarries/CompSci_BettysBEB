@@ -1,0 +1,20 @@
+\\wks-ef-file-01\efspupilsdata$\2005\05ef074\visual studio 2013\Projects\bettys bakery windows application\bettys bakery windows application\bin\Debug\bettys bakery windows application.exe.config
+\\wks-ef-file-01\efspupilsdata$\2005\05ef074\visual studio 2013\Projects\bettys bakery windows application\bettys bakery windows application\bin\Debug\bettys bakery windows application.exe
+\\wks-ef-file-01\efspupilsdata$\2005\05ef074\visual studio 2013\Projects\bettys bakery windows application\bettys bakery windows application\bin\Debug\bettys bakery windows application.pdb
+\\wks-ef-file-01\efspupilsdata$\2005\05ef074\visual studio 2013\Projects\bettys bakery windows application\bettys bakery windows application\bin\Debug\bettys bakery windows application.xml
+\\wks-ef-file-01\efspupilsdata$\2005\05ef074\visual studio 2013\Projects\bettys bakery windows application\bettys bakery windows application\obj\Debug\bettys_bakery_windows_application.Form1.resources
+\\wks-ef-file-01\efspupilsdata$\2005\05ef074\visual studio 2013\Projects\bettys bakery windows application\bettys bakery windows application\obj\Debug\bettys_bakery_windows_application.Resources.resources
+\\wks-ef-file-01\efspupilsdata$\2005\05ef074\visual studio 2013\Projects\bettys bakery windows application\bettys bakery windows application\obj\Debug\bettys bakery windows application.vbproj.GenerateResource.Cache
+\\wks-ef-file-01\efspupilsdata$\2005\05ef074\visual studio 2013\Projects\bettys bakery windows application\bettys bakery windows application\obj\Debug\bettys bakery windows application.exe
+\\wks-ef-file-01\efspupilsdata$\2005\05ef074\visual studio 2013\Projects\bettys bakery windows application\bettys bakery windows application\obj\Debug\bettys bakery windows application.xml
+\\wks-ef-file-01\efspupilsdata$\2005\05ef074\visual studio 2013\Projects\bettys bakery windows application\bettys bakery windows application\obj\Debug\bettys bakery windows application.pdb
+Z:\Visual Studio 2013\Projects\bettys bakery windows application\bettys bakery windows application\bin\Debug\bettys bakery windows application.exe.config
+Z:\Visual Studio 2013\Projects\bettys bakery windows application\bettys bakery windows application\obj\Debug\bettys bakery windows application.exe
+Z:\Visual Studio 2013\Projects\bettys bakery windows application\bettys bakery windows application\obj\Debug\bettys bakery windows application.xml
+Z:\Visual Studio 2013\Projects\bettys bakery windows application\bettys bakery windows application\obj\Debug\bettys bakery windows application.pdb
+Z:\Visual Studio 2013\Projects\bettys bakery windows application\bettys bakery windows application\obj\Debug\bettys_bakery_windows_application.Form1.resources
+Z:\Visual Studio 2013\Projects\bettys bakery windows application\bettys bakery windows application\obj\Debug\bettys_bakery_windows_application.Resources.resources
+Z:\Visual Studio 2013\Projects\bettys bakery windows application\bettys bakery windows application\obj\Debug\bettys bakery windows application.vbproj.GenerateResource.Cache
+Z:\Visual Studio 2013\Projects\bettys bakery windows application\bettys bakery windows application\bin\Debug\bettys bakery windows application.exe
+Z:\Visual Studio 2013\Projects\bettys bakery windows application\bettys bakery windows application\bin\Debug\bettys bakery windows application.pdb
+Z:\Visual Studio 2013\Projects\bettys bakery windows application\bettys bakery windows application\bin\Debug\bettys bakery windows application.xml
