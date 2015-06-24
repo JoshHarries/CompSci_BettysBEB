@@ -44,15 +44,14 @@ Partial Class Form1
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.eggQty = New System.Windows.Forms.Label()
         Me.largeEggs = New System.Windows.Forms.Label()
         Me.mediumEggs = New System.Windows.Forms.Label()
         Me.smallEggs = New System.Windows.Forms.Label()
+        Me.printCheck = New System.Windows.Forms.CheckBox()
         ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.cakeQty, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cupcakeQty, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ToolTip1
@@ -282,16 +281,6 @@ Partial Class Form1
         Me.Label6.TabIndex = 21
         Me.Label6.Text = "Small"
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = Global.Bettys.My.Resources.Resources.jhlogo
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(352, 605)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(97, 36)
-        Me.PictureBox1.TabIndex = 22
-        Me.PictureBox1.TabStop = False
-        '
         'eggQty
         '
         Me.eggQty.AutoSize = True
@@ -336,6 +325,19 @@ Partial Class Form1
         Me.smallEggs.TabIndex = 24
         Me.smallEggs.Text = "0"
         '
+        'printCheck
+        '
+        Me.printCheck.AutoSize = True
+        Me.printCheck.Checked = True
+        Me.printCheck.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.printCheck.Location = New System.Drawing.Point(159, 627)
+        Me.printCheck.Name = "printCheck"
+        Me.printCheck.Size = New System.Drawing.Size(149, 17)
+        Me.printCheck.TabIndex = 27
+        Me.printCheck.Text = "Print Order Details To File."
+        Me.printCheck.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.printCheck.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AcceptButton = Me.Button1
@@ -345,12 +347,12 @@ Partial Class Form1
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.CancelButton = Me.Button2
-        Me.ClientSize = New System.Drawing.Size(461, 653)
+        Me.ClientSize = New System.Drawing.Size(458, 653)
+        Me.Controls.Add(Me.printCheck)
         Me.Controls.Add(Me.largeEggs)
         Me.Controls.Add(Me.mediumEggs)
         Me.Controls.Add(Me.smallEggs)
         Me.Controls.Add(Me.eggQty)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -381,11 +383,10 @@ Partial Class Form1
         Me.ShowInTaskbar = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Bettys Best Ever Bakery - v1 Test"
+        Me.Text = "Bettys Best Ever Bakery - V2"
         Me.TopMost = True
         CType(Me.cakeQty, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cupcakeQty, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -409,10 +410,10 @@ Partial Class Form1
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents eggQty As System.Windows.Forms.Label
     Friend WithEvents largeEggs As System.Windows.Forms.Label
     Friend WithEvents mediumEggs As System.Windows.Forms.Label
     Friend WithEvents smallEggs As System.Windows.Forms.Label
+    Friend WithEvents printCheck As System.Windows.Forms.CheckBox
 
 End Class

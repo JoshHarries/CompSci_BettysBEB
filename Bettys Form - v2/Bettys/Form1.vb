@@ -15,9 +15,9 @@
 
     Sub displayIngredients()
 
-        flourQty.Text = totalFlour & "g"
-        sugarQty.Text = totalSugar & "g"
-        butterQty.Text = totalButter & "g"
+        flourQty.Text = totalFlour & "g."
+        sugarQty.Text = totalSugar & "g."
+        butterQty.Text = totalButter & "g."
         eggQty.Text = totalEggs & " Eggs."
 
     End Sub
@@ -182,6 +182,45 @@
 
     End Sub
 
+    Sub writeToFile()
+
+        If printCheck.CheckState = 1 And cupcakeQty.Value Or cakeQty.Value <> 0 Then
+
+            Dim txt = "Amount Of Cupcakes Requested: " & cupcakeQty.Value & Environment.NewLine & _
+                      "Amount Of Cakes Requested: " & cakeQty.Value & Environment.NewLine & Environment.NewLine & _
+                      "Amount Of Flour Needed: " & flourQty.Text & Environment.NewLine & _
+                      "Amount Of Sugar Needed: " & sugarQty.Text & Environment.NewLine & _
+                      "Amount Of Butter Needed: " & butterQty.Text & Environment.NewLine & _
+                      "Amount Of Eggs Needed: " & eggQty.Text & Environment.NewLine & Environment.NewLine & _
+                      "Amount Of Small Flour Bags Needed: " & smallFlourQty & Environment.NewLine & _
+                      "Amount Of Medium Flour Bags Needed: " & mediumFlourQty & Environment.NewLine & _
+                      "Amount Of Large Flour Bags Needed: " & largeFlourQty & Environment.NewLine & Environment.NewLine & _
+                      "Amount Of Small Sugar Bags Needed: " & smallSugarQty & Environment.NewLine & _
+                      "Amount Of Medium Sugar Bags Needed: " & mediumSugarQty & Environment.NewLine & _
+                      "Amount Of Large Sugar Bags Needed: " & largeSugarQty & Environment.NewLine & Environment.NewLine & _
+                      "Amount Of Small Butter Bags Needed: " & smallButterQty & Environment.NewLine & _
+                      "Amount Of Medium Butter Bags Needed: " & mediumButterQty & Environment.NewLine & _
+                      "Amount Of Large Butter Bags Needed: " & largeButterQty & Environment.NewLine & Environment.NewLine & _
+                      "Amount Of Small Eggs Bags Needed: " & smallEggsQty & Environment.NewLine & _
+                      "Amount Of Medium Eggs Bags Needed: " & mediumEggsQty & Environment.NewLine & _
+                      "Amount Of Large Eggs Bags Needed: " & largeEggsQty & Environment.NewLine & Environment.NewLine
+
+            Dim filePath As String
+            filePath = System.IO.Path.Combine(My.Computer.FileSystem.SpecialDirectories.MyDocuments, "OrderDetails_" & DateTime.Today.ToString("dd-MMM-yyyy") & ".txt")
+            My.Computer.FileSystem.WriteAllText(filePath, Date.Now.ToLongTimeString & Environment.NewLine & txt, True)
+
+            Dim filePath2 As String
+            filePath2 = System.IO.Path.Combine(My.Computer.FileSystem.SpecialDirectories.MyDocuments, "OrderHistory.txt")
+            My.Computer.FileSystem.WriteAllText(filePath2, DateAndTime.Now & Environment.NewLine & txt & Environment.NewLine, True)
+
+            If System.IO.File.Exists(filePath) = True Then
+                Process.Start(filePath)
+            End If
+
+        End If
+
+    End Sub
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         ingredientsQtys()
@@ -191,6 +230,7 @@
         calculateSugar()
         calculateEggs()
         displayPackaging()
+        writeToFile()
 
     End Sub
 
@@ -199,7 +239,7 @@
         cakeQty.Value = 0
         cupcakeQty.Value = 0
         Button1_Click(sender, New System.EventArgs())
-    End Sub
 
+    End Sub
 
 End Class
