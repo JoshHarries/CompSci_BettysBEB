@@ -63,9 +63,14 @@ Partial Class Form1
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
+        Me.nameBox = New System.Windows.Forms.TextBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.cakeQty, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cupcakeQty, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ToolTip1
@@ -231,7 +236,7 @@ Partial Class Form1
         Me.flourQty.AutoSize = True
         Me.flourQty.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.flourQty.ForeColor = System.Drawing.Color.Fuchsia
-        Me.flourQty.Location = New System.Drawing.Point(173, 264)
+        Me.flourQty.Location = New System.Drawing.Point(198, 264)
         Me.flourQty.Name = "flourQty"
         Me.flourQty.Size = New System.Drawing.Size(31, 17)
         Me.flourQty.TabIndex = 13
@@ -242,7 +247,7 @@ Partial Class Form1
         Me.sugarQty.AutoSize = True
         Me.sugarQty.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.sugarQty.ForeColor = System.Drawing.Color.Fuchsia
-        Me.sugarQty.Location = New System.Drawing.Point(174, 332)
+        Me.sugarQty.Location = New System.Drawing.Point(197, 297)
         Me.sugarQty.Name = "sugarQty"
         Me.sugarQty.Size = New System.Drawing.Size(31, 17)
         Me.sugarQty.TabIndex = 14
@@ -253,7 +258,7 @@ Partial Class Form1
         Me.butterQty.AutoSize = True
         Me.butterQty.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.butterQty.ForeColor = System.Drawing.Color.Fuchsia
-        Me.butterQty.Location = New System.Drawing.Point(173, 298)
+        Me.butterQty.Location = New System.Drawing.Point(199, 331)
         Me.butterQty.Name = "butterQty"
         Me.butterQty.Size = New System.Drawing.Size(31, 17)
         Me.butterQty.TabIndex = 15
@@ -300,7 +305,7 @@ Partial Class Form1
         Me.eggQty.AutoSize = True
         Me.eggQty.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.eggQty.ForeColor = System.Drawing.Color.Fuchsia
-        Me.eggQty.Location = New System.Drawing.Point(173, 366)
+        Me.eggQty.Location = New System.Drawing.Point(185, 366)
         Me.eggQty.Name = "eggQty"
         Me.eggQty.Size = New System.Drawing.Size(63, 17)
         Me.eggQty.TabIndex = 23
@@ -346,7 +351,7 @@ Partial Class Form1
         Me.printCheck.CheckState = System.Windows.Forms.CheckState.Checked
         Me.printCheck.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.printCheck.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.printCheck.Location = New System.Drawing.Point(101, 617)
+        Me.printCheck.Location = New System.Drawing.Point(101, 605)
         Me.printCheck.Name = "printCheck"
         Me.printCheck.Size = New System.Drawing.Size(149, 17)
         Me.printCheck.TabIndex = 27
@@ -526,6 +531,36 @@ Partial Class Form1
         Me.Label17.Text = "Betty's Best Ever Bakery"
         Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'nameBox
+        '
+        Me.nameBox.ForeColor = System.Drawing.Color.Silver
+        Me.nameBox.Location = New System.Drawing.Point(101, 622)
+        Me.nameBox.Name = "nameBox"
+        Me.nameBox.Size = New System.Drawing.Size(149, 20)
+        Me.nameBox.TabIndex = 42
+        Me.nameBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        ToolTip1.SetToolTip(Me.nameBox, "Enter Desired Order Name")
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.Bettys.My.Resources.Resources.white_cake_pink_frosting
+        Me.PictureBox2.Location = New System.Drawing.Point(262, 278)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(82, 89)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 44
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Bettys.My.Resources.Resources.cupcake_clip_art_cupcake6
+        Me.PictureBox1.Location = New System.Drawing.Point(13, 278)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(82, 89)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 43
+        Me.PictureBox1.TabStop = False
+        '
         'Form1
         '
         Me.AcceptButton = Me.Button1
@@ -535,6 +570,9 @@ Partial Class Form1
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.CancelButton = Me.Button2
         Me.ClientSize = New System.Drawing.Size(351, 653)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.nameBox)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Label15)
@@ -581,13 +619,14 @@ Partial Class Form1
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
-        Me.ShowInTaskbar = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Bettys Best Ever Bakery - V2"
         Me.TopMost = True
         CType(Me.cakeQty, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cupcakeQty, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -630,5 +669,8 @@ Partial Class Form1
     Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents nameBox As System.Windows.Forms.TextBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
 
 End Class

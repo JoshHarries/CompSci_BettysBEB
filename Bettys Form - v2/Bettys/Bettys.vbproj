@@ -166,6 +166,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Archigraphs-Aka-Acid-Vanilla-Cupcake.ico" />
+    <None Include="Resources\white-cake-pink-frosting.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">

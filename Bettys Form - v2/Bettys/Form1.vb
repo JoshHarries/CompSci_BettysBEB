@@ -93,9 +93,9 @@
 
     Sub calculateEggs()
 
-        largeEggsQty = 0
         smallEggsQty = 0
         mediumEggsQty = 0
+        largeEggsQty = 0
 
         Dim six, ten As Integer
 
@@ -207,11 +207,11 @@
 
             Dim filePath As String
             filePath = System.IO.Path.Combine(My.Computer.FileSystem.SpecialDirectories.MyDocuments, "OrderDetails_" & DateTime.Today.ToString("dd-MMM-yyyy") & ".txt")
-            My.Computer.FileSystem.WriteAllText(filePath, Date.Now.ToLongTimeString & Environment.NewLine & txt, True)
+            My.Computer.FileSystem.WriteAllText(filePath, Date.Now.ToLongTimeString & " | " & nameBox.Text & Environment.NewLine & txt, True)
 
             Dim filePath2 As String
             filePath2 = System.IO.Path.Combine(My.Computer.FileSystem.SpecialDirectories.MyDocuments, "OrderHistory.txt")
-            My.Computer.FileSystem.WriteAllText(filePath2, DateAndTime.Now & Environment.NewLine & txt & Environment.NewLine, True)
+            My.Computer.FileSystem.WriteAllText(filePath2, DateAndTime.Now & " | " & nameBox.Text & Environment.NewLine & txt & Environment.NewLine, True)
 
             If System.IO.File.Exists(filePath) = True Then
                 Process.Start(filePath)
