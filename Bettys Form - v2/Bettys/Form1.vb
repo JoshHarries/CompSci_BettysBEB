@@ -73,9 +73,9 @@
         mediumButterQty = 0
         largeButterQty = 0
 
-        smallButterQty = Math.Floor(totalButter / 65)
+        smallButterQty = Math.Floor(totalButter / 125)
 
-        If totalButter Mod 65 <> 0 Then
+        If totalButter Mod 125 <> 0 Then
             smallButterQty += 1
         End If
 
