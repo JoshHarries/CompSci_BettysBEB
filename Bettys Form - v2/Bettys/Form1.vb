@@ -79,7 +79,7 @@
             smallButterQty += 1
         End If
 
-        While smallButterQty > 3
+        While smallButterQty > 3  'CHECK WITH WJEC SPEC!!!!
             smallButterQty -= 4
             largeButterQty += 1
         End While
